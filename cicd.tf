@@ -67,7 +67,7 @@ resource "google_project_iam_member" "cicd_custom_bucket_iam" {
 resource "google_iam_workload_identity_pool" "github_pool" {
   provider                  = google-beta
   project                   = var.gcp_project_id
-  workload_identity_pool_id = "github-pool-custom"
+  workload_identity_pool_id = "github-pool"
   display_name              = "GitHub Pool"
   description               = "Workload Identity Pool for GitHub Actions"
 }
