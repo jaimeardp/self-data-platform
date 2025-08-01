@@ -5,7 +5,7 @@
 # -----------------------------------------------------------------------------
 terraform {
   backend "gcs" {
-    bucket = var.gcp_bucket_tf_state # Using the bucket you created
+    bucket = "self-tfstate-bkt" # Using the bucket you created
     prefix = "platform/infra"
   }
 }
